@@ -50,19 +50,19 @@ def pcl_repositories():
 
     maybe(
         http_archive,
-        name = "net_zlib_zlib",
-        sha256 = "6d4d6640ca3121620995ee255945161821218752b551a1a180f4215f7d124d45",
+        name = "zlib",
+        sha256 = "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
         build_file = "@rules_pcl//third_party:zlib.BUILD",
-        strip_prefix = "zlib-cacf7f1d4e3d44d871b605da3b647f07d718623f",
+        strip_prefix = "zlib-1.3.1",
         urls = [
-            "https://mirror.bazel.build/github.com/madler/zlib/archive/cacf7f1d4e3d44d871b605da3b647f07d718623f.tar.gz",
-            "https://github.com/madler/zlib/archive/cacf7f1d4e3d44d871b605da3b647f07d718623f.tar.gz",
+            "https://mirror.bazel.build/github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz",
+            "https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz",
         ],
     )
 
     maybe(
         http_archive,
-        name = "org_libpng_libpng",
+        name = "libpng",
         build_file = "@rules_pcl//third_party:libpng.BUILD",
         sha256 = "7f415186d38ca71c23058386d7cf5135c8beda821ee1beecdc2a7a26c0356615",
         strip_prefix = "libpng-1.2.57",

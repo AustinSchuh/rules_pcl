@@ -207,7 +207,7 @@ pcl_library(
         "@boost//:tokenizer",
         "@boost//:utility",
         "@boost//:version",
-        "@org_libpng_libpng//:libpng",
+        "@libpng",
     ],
 )
 
